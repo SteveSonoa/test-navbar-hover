@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Load Font Awesome -->
+	<script src="https://use.fontawesome.com/e14e0f3537.js"></script>
+
+	<!-- Load local files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="assets/javascript/app.js"></script>
+	<script src="assets/javascript/data.js"></script>
+
+	<title></title>
+
+	<style type="text/css">
+		.menuItem {
+/*			max-height: 50px;*/
+			transition: width .25s, height .25s;
+		}
+		.menuItem:hover {
+			width: 75px;
+			transition: width .1s, height .1s;
+		}
+		#transition-hover-content {
+			text-align: left;
+			margin-left: 3.5%;
+		}
+		@media screen and (min-width: 768px) {
+			#transition-hover-content {
+			    opacity:0;   
+			    -webkit-transition:.2s;
+			    -moz-transition:.2s;
+			    -o-transition:.2s;
+			    -ms-transition:.2s;
+			    transition:.2s;
+			    text-align: center;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			.menuItem {
+			    float: left;
+				padding-right: 5px;
+			}
+			.transition-hover {
+				padding-bottom: 5px;
+			}
+		}	
+		.transition-hover:hover #transition-hover-content {
+		    opacity:1;
+		    
+		}
+		.navbar {
+			background-color: #ffffff;
+			border: 0;
+		}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="transition-hover"><a href="#"><img src="256x256.png" width="50px" class="menuItem img img-responsive" /></a>
+        	<p id="transition-hover-content">Today</p>
+    	</li>
+        <li class="transition-hover"><a href="#"><img src="256x256.png" width="50px" class="menuItem img img-responsive" /></a>
+        	<p id="transition-hover-content">This Week</p>
+        </li>
+        <li class="transition-hover"><a href="#"><img src="256x256.png" width="50px" class="menuItem img img-responsive" /></a>
+        	<p id="transition-hover-content">Settings</p>
+        </li>
+        <li class="transition-hover"><a href="#"><img src="256x256.png" width="50px" class="menuItem img img-responsive" /></a>
+        	<p id="transition-hover-content">Profile</p>
+        </li>
+        <li class="transition-hover"><a href="#"><img src="256x256.png" width="50px" class="menuItem img img-responsive" /></a>
+        	<p id="transition-hover-content">Search</p>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</body>
+</html>
